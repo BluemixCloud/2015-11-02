@@ -1,0 +1,22 @@
+<% include ./template/header %>
+<% include ./template/nav %>
+
+<div class="row">
+  <div class="small-12 columns">
+    <h1>Quote</h1>
+  </div>
+</div>
+
+<div class="row">
+  <div class="small-4 columns">
+    <input type="text" id="txt-symbol" placeholder="Symbol">
+    <button class="tiny radius" id="btn-quote">Get Quote</button>
+  </div>
+  <div class="small-8 columns">
+    <div id="result"></div>
+  </div>
+</div>
+
+<% include ./template/scripts %>
+<script src="/js/quote.js"></script>
+<% include ./template/footer %>

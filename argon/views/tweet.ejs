@@ -1,0 +1,23 @@
+<% include ./template/header %>
+<% include ./template/nav %>
+
+<div class="row">
+  <div class="small-12 columns">
+    <h1>Tweet</h1>
+  </div>
+</div>
+
+<div class="row">
+  <div class="small-2 columns">
+    <button class="tiny radius" id="btn-tweets">Get Tweets</button>
+  </div>
+  <div class="small-10 columns">
+    <div id="graph"></div>
+    <ul id="tweets"></ul>
+  </div>
+</div>
+
+<% include ./template/scripts %>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="/js/tweet.js"></script>
+<% include ./template/footer %>

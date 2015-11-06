@@ -1,0 +1,32 @@
+<% include ./template/header %>
+<% include ./template/nav %>
+
+<style>
+  body{
+    background-color: #FFDC00;
+  }
+</style>
+
+<div class="row">
+  <div class="small-12 columns">
+    <h1>Translate</h1>
+  </div>
+</div>
+
+<div class="row">
+  <div class="small-2 columns">
+    <input type="text" id="txt-source" placeholder="Text to translate" />
+    <button style="width: 100%;" class="tiny radius" id="btn-translate">Translate</button>
+    <button style="width: 100%;" class="tiny radius alert" id="btn-speak">Speak</button>
+    <input type="text" id="txt-question" placeholder="Q/A" />
+    <button style="width: 100%;" class="tiny radius info" id="btn-question">Answer</button>
+  </div>
+  <div class="small-10 columns">
+    <audio controls="true"></audio>
+    <div id="translation"></div>
+  </div>
+</div>
+
+<% include ./template/scripts %>
+<script src="/js/translate.js"></script>
+<% include ./template/footer %>

@@ -1,0 +1,23 @@
+<% include ./template/header %>
+<% include ./template/nav %>
+
+<div class="row">
+  <div class="small-12 columns">
+    <h1>Sum</h1>
+  </div>
+</div>
+
+<div class="row">
+  <div class="small-4 columns">
+    <input type="text" id="txt-numbers" />
+    <button class="tiny radius" id="btn-numbers">Sum</button>
+  </div>
+  <div class="small-8 columns">
+    <ul id="output-list"></ul>
+    <div id="output-sum"></div>
+  </div>
+</div>
+
+<% include ./template/scripts %>
+<script src="/js/sum.js"></script>
+<% include ./template/footer %>

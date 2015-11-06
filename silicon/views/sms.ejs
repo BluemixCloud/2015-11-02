@@ -1,0 +1,22 @@
+<% include ./template/header %>
+<% include ./template/nav %>
+
+<div class="row">
+  <div class="small-12 columns">
+    <h1>SMS</h1>
+  </div>
+</div>
+
+<div class="row">
+  <div class="small-4 columns">
+    <input type="text" id="txt-phone" placeholder="Phone" />
+    <input type="text" id="txt-message" placeholder="Message" />
+    <button id="btn-send">Send Message</button>
+  </div>
+  <div class="small-8 columns">
+  </div>
+</div>
+
+<% include ./template/scripts %>
+<script src="/js/sms.js"></script>
+<% include ./template/footer %>

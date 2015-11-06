@@ -1,0 +1,33 @@
+<% include ./template/header %>
+<% include ./template/nav %>
+
+<div class="row">
+  <div class="small-12 columns">
+    <h1>Math</h1>
+  </div>
+</div>
+
+<div class="row">
+  <div class="small-3 columns">
+    <input type="text" id="txt-square" />
+    <button class="button small radius success" id="btn-square">Square</button>
+  </div>
+  <div class="small-9 columns">
+    <div id="res-square"></div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="small-3 columns">
+    <input type="text" id="txt-x" />
+    <input type="text" id="txt-y" />
+    <button class="button small radius success" id="btn-add">Add</button>
+  </div>
+  <div class="small-9 columns">
+    <div id="res-add"></div>
+  </div>
+</div>
+
+<% include ./template/scripts %>
+<script src="/js/math.js"></script>
+<% include ./template/footer %>

@@ -1,0 +1,25 @@
+<% include ./template/header %>
+<% include ./template/nav %>
+
+<div class="row">
+  <div class="small-12 columns">
+    <h1>Math</h1>
+  </div>
+</div>
+
+<div class="row">
+  <div class="small-4 columns">
+    <input type="text" id="txt-numbers1" />
+    <input type="text" id="txt-numbers2" />
+    <button id="btn-multiply">Multiply</button>
+    <button id="btn-power">Power</button>
+  </div>
+  <div class="small-8 columns">
+    <ul id="ul-multiply"></ul>
+    <ul id="ul-power"></ul>
+  </div>
+</div>
+
+<% include ./template/scripts %>
+<script src="/js/math.js"></script>
+<% include ./template/footer %>
